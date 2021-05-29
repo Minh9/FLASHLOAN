@@ -1,0 +1,32 @@
+
+
+
+<table border="1px" >
+        <tr>
+            <th  colspan="6"  > Display the first 20 latest flashloan of the AAVE  by using Graph Protocol
+            </th>
+        </tr>
+        <tr>
+                <td>Amount</td>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Symbol</td>
+                <td>Target</td>
+                <td>TimeStamp</td>
+
+
+        </tr>
+        <% for (var i=0;i<userdata.length;i++){ %>
+            <tr>
+                <td><%=userdata[i].amount %></td>
+                <td><%=userdata[i].id %></td>
+                <td><%=userdata[i].reserve.name %></td>
+                <td><%=userdata[i].reserve.symbol %></td>
+                <td><%=userdata[i].target %></td>
+                <td><%=userdata[i].timestamp %></td>
+
+            </tr>
+
+        <%}%>
+
+ </table>
